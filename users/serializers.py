@@ -10,9 +10,10 @@ class UserSerializer(serializers.ModelSerializer):
     #tasks = serializers.PrimaryKeyRelatedField(many=True, queryset=Task.objects.all())
     class Meta:
         model = models.CustomUser
-        fields = ('email', 'username', 'name', 'password')
-        
+        fields = ('email', 'username', 'name')
+        """
         extra_kwargs = {
             'password': {'write_only': True}
         }
+        """
         

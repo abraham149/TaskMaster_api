@@ -15,5 +15,7 @@ class TaskSerializer(serializers.ModelSerializer):
             'fecha',
             'hora',
             'owner',
+            'fechaTerminada', 
+            'terminada',
         )
         model = models.Task
